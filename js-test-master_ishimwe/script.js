@@ -5,7 +5,6 @@ var postings = postManager.prototype.posts;
 postings.sort(function(a,b){
     return a.userId-b.userId ;
 });
-//const p=postings.compare(a.userId,b.userId);
 	 for (var i in postings)
 {
     document.write("<ul><li><b> " +postings[i].userId+ " "+ postings[i].title+"</b> "+"<br>"+postings[i].body+ "</ul></li>");
